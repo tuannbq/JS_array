@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập mảng</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Bài tập mảng</h1>
+
+    <label for="inputNum">Nhập số nguyên:</label>
+    <input type="number" id="inputNum">
+    <button onclick="addNumber()">Thêm vào mảng</button>
+    <p id="txtArray">Mảng: </p>
+
+    <div id="results">
+        <div class="function-container">
+            <h3>1. Tổng số dương</h3>
+            <button onclick="sumPositive()">Tính tổng</button>
+            <p id="txtSum"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>2. Đếm số dương</h3>
+            <button onclick="countPositive()">Đếm</button>
+            <p id="txtCount"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>3. Tìm số nhỏ nhất</h3>
+            <button onclick="findMin()">Tìm</button>
+            <p id="txtMin"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>4. Tìm số dương nhỏ nhất</h3>
+            <button onclick="findMinPositive()">Tìm</button>
+            <p id="txtMinPos"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>5. Tìm số chẵn cuối cùng</h3>
+            <button onclick="findLastEven()">Tìm</button>
+            <p id="txtEven"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>6. Đổi chỗ phần tử trong mảng</h3>
+            <label for="inputIndex1">Nhập vị trí 1:</label>
+            <input type="number" id="inputIndex1">
+            <label for="inputIndex2">Nhập vị trí 2:</label>
+            <input type="number" id="inputIndex2">
+            <button onclick="swapElements()">Đổi chỗ</button>
+            <p id="txtChangePos"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>7. Sắp xếp tăng dần</h3>
+            <button onclick="sortArray()">Sắp xếp</button>
+            <p id="txtIncrease"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>8. Tìm số nguyên tố đầu tiên</h3>
+            <button onclick="findFirstPrime()">Tìm</button>
+            <p id="txtPrime"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>9. Đếm số nguyên</h3>
+            <button onclick="countIntegers()">Đếm</button>
+            <p id="txtIntCount"></p>
+        </div>
+
+        <div class="function-container">
+            <h3>10. So sánh số lượng số âm và dương</h3>
+            <button onclick="comparePositiveNegative()">So sánh</button>
+            <p id="txtCompare"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
